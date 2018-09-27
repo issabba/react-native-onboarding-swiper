@@ -55,10 +55,13 @@ class Onboarding extends Component {
   };
 
   goNext = () => {
-    this.flatList.scrollToIndex({
-      animated: true,
-      index: this.state.currentPage + 1,
-    });
+    setTimeout(() => { 
+      this.flatList.scrollToIndex({
+        animated: true,
+        index: this.state.currentPage + 1,
+      });
+    }, 100);
+    
   };
 
   _onLayout = () => {
