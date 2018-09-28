@@ -159,6 +159,7 @@ class Onboarding extends Component {
           onViewableItemsChanged={this.onSwipePageChange}
           viewabilityConfig={itemVisibleHotfix}
           initialNumToRender={1}
+          onScrollToIndexFailed={()=>{}}
           extraData={
             this.state.width // ensure that the list re-renders on orientation change
           }
@@ -183,7 +184,6 @@ class Onboarding extends Component {
             DoneButtonComponent={DoneButtonComponent}
             NextButtonComponent={NextButtonComponent}
             DotComponent={DotComponent}
-            onScrollToIndexFailed={()=>{}}
           />
         </SafeAreaView>
       </Animated.View>
