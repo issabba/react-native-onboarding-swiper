@@ -55,13 +55,10 @@ class Onboarding extends Component {
   };
 
   goNext = () => {
-    setTimeout(() => { 
-      this.flatList.scrollToIndex({
-        animated: true,
-        index: this.state.currentPage + 1,
-      });
-    }, 100);
-    
+    this.flatList.scrollToIndex({
+    animated: true,
+    index: this.state.currentPage + 1,
+    });
   };
 
   _onLayout = () => {
@@ -186,6 +183,7 @@ class Onboarding extends Component {
             DoneButtonComponent={DoneButtonComponent}
             NextButtonComponent={NextButtonComponent}
             DotComponent={DotComponent}
+            onScrollToIndexFailed={()=>{}}
           />
         </SafeAreaView>
       </Animated.View>
