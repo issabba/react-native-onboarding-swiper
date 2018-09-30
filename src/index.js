@@ -4,9 +4,9 @@ import {
   StatusBar,
   SafeAreaView,
   ViewPropTypes,
+  FlatList
 } from 'react-native';
 
-import {OptimizedFlatList} from 'react-native-optimized-flatlist'
 
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
@@ -147,7 +147,7 @@ class Onboarding extends Component {
         style={{ flex: 1, backgroundColor, justifyContent: 'center' }}
       >
         {controlStatusBar && <StatusBar barStyle={barStyle} />}
-        <OptimizedFlatList
+        <FlatList
           ref={list => {
             this.flatList = list;
           }}
