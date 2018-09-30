@@ -30,8 +30,7 @@
   },
   "homepage": "https://github.com/jfilter/react-native-onboarding-swiper#readme",
   "dependencies": {
-    "tinycolor2": "^1.4.1",
-    "react-native-optimized-flatlist": "^1.0.4"
+    "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
